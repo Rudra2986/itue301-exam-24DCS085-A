@@ -61,7 +61,7 @@ A full-stack web application built using **React (Vite) + Express.js + Node.js +
 1. Ensure MongoDB service is running locally on port `27017` or use MongoDB Atlas.
 2. In the `backend/.env` file, specify your MongoDB connection string:
    ```env
-   MONGO_URI=mongodb://127.0.0.1:27017/hospital_db
+   MONGO_URI=mongodb+srv://<username>:<password>@cluster0...
    ```
 3. The server automatically connects to MongoDB upon launch.
 4. To seed test records into MongoDB, send a POST request:
@@ -81,7 +81,7 @@ Create a `.env` file inside the `backend/` directory (or use `.env.example` as a
 
 ```env
 PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/hospital_db
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0...
 ```
 
 ---
